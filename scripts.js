@@ -5,11 +5,8 @@ let showTasks = document.querySelector("#display");
 function add () {
 	let task = document.querySelector('#inTask'); 
 	itemID++;
-		//can make task = #inTask.value or #inTask, and leave .value to the push fn
 
 	toDo.push({ "tasko"	: task.value, "id":itemID});
-
-	console.log(toDo);
 
 	refreshList();
 }
